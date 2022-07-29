@@ -1,8 +1,9 @@
 from selenium.webdriver.common.by import By
 
 
-class MainPageLocators:
+class BasePageLocators:
     LOGIN_LINK = (By.XPATH, "//*[@id='login_link']")
+    LOGIN_LINK_INVALID = (By.XPATH, "//*[@id='login_link_inc']")
 
 
 class LoginPageLocators:
@@ -16,3 +17,4 @@ class ProductPageLocators:
     BASKET_MESSAGE_PRODUCT_NAME = (By.XPATH, "//*[@id = 'messages']/div[1]/*/strong")
     PRODUCT_PRICE = (By.XPATH, "//*[@class = 'price_color']")
     BASKET_MESSAGE_PRODUCT_PRICE = (By.XPATH, "//*[@id = 'messages']/div[3]/*/*/strong")
+    SUCCESS_MESSAGE = (By.XPATH, "//*[contains(@class,'alert-success')]")
