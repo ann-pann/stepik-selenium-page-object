@@ -11,7 +11,7 @@ class BasePageLocators:
 class LoginPageLocators:
     LOGIN_FORM = (By.XPATH, "//*[@id='login_form']")
     REGISTER_FORM = (By.XPATH, "//*[@id='register_form']")
-    REGISTER_FORM_EMAIL_FIELD = (By.XPATH, "//*[@id='register_form']//input[@type='email']")
+    REGISTER_FORM_EMAIL_FIELD = (By.XPATH, "//*[@name='registration-email']")
     REGISTER_FORM_PASSWORD_FIELD = (By.XPATH, "//*[@name='registration-password1']")
     REGISTER_FORM_CONFIRM_PASSWORD = (By.XPATH, "//*[@name='registration-password2']")
     REGISTER_FORM_BUTTON = (By.XPATH, "//button[@name='registration_submit']")
